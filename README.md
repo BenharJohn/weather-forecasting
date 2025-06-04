@@ -99,3 +99,24 @@ This project, developed under the auspices of PM Accelerator, focuses on creatin
 - **Programming Language:** Python 3.x
 - **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Statsmodels, TensorFlow, Keras
 - **Platforms:** Jupyter Notebook or Google Colab
+
+### Generating Forecasts
+
+Run the forecasting pipeline once to generate a `forecast.csv` file before
+starting the web server:
+
+```bash
+python Final_Code.py
+```
+
+This command calls `train_and_predict()` and saves the ensemble results to
+`forecast.csv` in the `webapp` directory.
+
+### Running the Web Application
+
+After the forecast file is generated, start the Flask web server from the
+`webapp` directory:
+
+```bash
+python webapp/app.py
+```
